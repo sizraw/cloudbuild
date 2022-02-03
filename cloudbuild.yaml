@@ -11,4 +11,8 @@
 steps:
 - name: gcr.io/cloud-builders/docker
   args: ['build', '-t', 'zeta-time-338114/cloud-spanner-build', '--build-arg=JAR_FILE=target/build-artifact', '.']
-images: ['gcr.io/zeta-time-338114/cloud-spanner-build']
+  images: ['gcr.io/zeta-time-338114/cloud-spanner-build']
+  
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 
+           'gcr.io/zeta-time-338114/cloud-spanner-build']

@@ -16,5 +16,3 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 
            'gcr.io/zeta-time-338114/cloud-spanner-build']
-options:
-  logging: CLOUD_LOGGING_ONLY

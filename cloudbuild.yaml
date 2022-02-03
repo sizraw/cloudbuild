@@ -10,4 +10,4 @@ steps:
 steps:
   - name: gcr.io/cloud-builders/docker
     args: ['build', '-t', 'gcr.io/zeta-time-338114/myimage', '--build-arg=JAR_FILE=target/jar-file-cloud']
-    images: ['gcr.io/zeta-time-338114/myimage]
+    images: ['gcr.io/zeta-time-338114/myimage']
